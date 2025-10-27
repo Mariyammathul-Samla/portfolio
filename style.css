@@ -759,4 +759,39 @@ button:hover {
 
 
 
+/* Fix mobile layout overflow — contact section */
+@media only screen and (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  #contact .contact-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #contact .contact-item {
+    width: 90%;
+    margin: 10px 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #contact .contact-item .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  #contact .contact-item .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 
