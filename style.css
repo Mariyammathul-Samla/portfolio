@@ -760,3 +760,23 @@ button:hover {
 
 
 
+/* ✅ Fix wide scrollbar on mobile — no desktop change */
+@media only screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+/* ✅ Optional: make scrollbar thinner (looks clean everywhere) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
