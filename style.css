@@ -780,3 +780,24 @@ button:hover {
   background: #666;
 }
 
+/* Fix mobile overflow issue (contact/footer area) */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .contact.container,
+  .footer.container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .contact-item,
+  .contact-info,
+  .social-icon {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
