@@ -758,33 +758,5 @@ button:hover {
 }
 
 
-/* ✅ Fix loose layout / side scroll only on mobile */
-@media only screen and (max-width: 768px) {
-  html, body {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
 
-  * {
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-
-  section, div, img {
-    width: 100%;
-  }
-
-  /* Fix specific sections that may stretch */
-  #header,
-  #hero,
-  #services,
-  #projects,
-  #about,
-  #contact,
-  #footer {
-    overflow-x: hidden;
-  }
-}
 
